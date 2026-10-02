@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { speak, speakSound } from '../lib/speech.js';
 import { sfx } from '../lib/sfx.js';
 
@@ -80,21 +80,47 @@ export function SentenceTapper({ sentence, sound }) {
 // Finger-tracing canvas over a dotted letter.
 export function TracingPad({ sound }) {
   const canvasRef = useRef(null);
+  const ctxRef = useRef(null);
   const drawing = useRef(false);
 
+  // Size the backing store once (and on resize). Assigning canvas.width
+  // ERASES everything, so this must never run in the middle of a stroke.
   const setup = useCallback(() => {
     const canvas = canvasRef.current;
     if (!canvas) return null;
     const ratio = window.devicePixelRatio || 1;
     const rect = canvas.getBoundingClientRect();
-    canvas.width = rect.width * ratio;
-    canvas.height = rect.height * ratio;
+    if (rect.width === 0 || rect.height === 0) return null;
+    const w = Math.round(rect.width * ratio);
+    const h = Math.round(rect.height * ratio);
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width = w;
+      canvas.height = h;
+    }
     const ctx = canvas.getContext('2d');
-    ctx.scale(ratio, ratio);
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
-    return { ctx, rect };
+    ctx.strokeStyle = '#ff8c42';
+    ctx.lineWidth = 14;
+    ctxRef.current = ctx;
+    return ctx;
   }, []);
+
+  useEffect(() => {
+    setup();
+    window.addEventListener('resize', setup);
+    return () => window.removeEventListener('resize', setup);
+  }, [setup]);
+
+  // Fresh letter, fresh canvas.
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = ctxRef.current ?? setup();
+    if (canvas && ctx) ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }, [sound, setup]);
+
+  const context = () => ctxRef.current ?? setup();
 
   const position = (event) => {
     const source = event.touches?.[0] ?? event;
@@ -104,20 +130,21 @@ export function TracingPad({ sound }) {
 
   const start = (event) => {
     event.preventDefault();
-    const ctx = setup()?.ctx;
+    const ctx = context();
     if (!ctx) return;
     drawing.current = true;
     const { x, y } = position(event);
     ctx.beginPath();
     ctx.moveTo(x, y);
-    ctx.strokeStyle = '#ff8c42';
-    ctx.lineWidth = 12;
+    // A dot for a simple tap (no move).
+    ctx.lineTo(x + 0.1, y + 0.1);
+    ctx.stroke();
   };
 
   const move = (event) => {
     if (!drawing.current) return;
     event.preventDefault();
-    const ctx = setup()?.ctx;
+    const ctx = context();
     if (!ctx) return;
     const { x, y } = position(event);
     ctx.lineTo(x, y);
@@ -130,7 +157,7 @@ export function TracingPad({ sound }) {
 
   const clear = () => {
     const canvas = canvasRef.current;
-    const ctx = setup()?.ctx;
+    const ctx = context();
     if (!canvas || !ctx) return;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     sfx.tap();

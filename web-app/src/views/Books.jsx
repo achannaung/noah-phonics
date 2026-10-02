@@ -1,11 +1,31 @@
 import { useState } from 'react';
 import { BOOKS, STAGES } from '../data/curriculum.js';
 import { sfx } from '../lib/sfx.js';
+import BookReader from './BookReader.jsx';
 
-export default function Books({ state, onPickStage, toggleBook }) {
+export default function Books({ state, onPickStage, toggleBook, markRead, addStars }) {
   const [stageId, setStageId] = useState(state.stage);
+  const [openTitle, setOpenTitle] = useState(null);
   const stage = STAGES.find((s) => s.id === stageId);
   const books = BOOKS[stageId] ?? [];
+
+  if (openTitle) {
+    const book = books.find((b) => b.title === openTitle) ?? { title: openTitle, note: '' };
+    return (
+      <BookReader
+        stage={stage}
+        book={book}
+        isRead={(state.readList ?? []).includes(book.title)}
+        isOwned={state.bookList.includes(book.title)}
+        onBack={() => setOpenTitle(null)}
+        onFinish={(title) => {
+          markRead(title);
+          addStars(2);
+        }}
+        onToggleOwned={toggleBook}
+      />
+    );
+  }
 
   return (
     <div className="view">
@@ -13,7 +33,7 @@ export default function Books({ state, onPickStage, toggleBook }) {
         <div className="hero-mascot" aria-hidden="true">📚</div>
         <h1>Book Levels</h1>
         <p className="muted" style={{ fontWeight: 700 }}>
-          Tick the books Noah owns to track your reading library.
+          Tap a book to read it. Tick ✓ for books Noah owns.
         </p>
       </section>
 
@@ -44,21 +64,38 @@ export default function Books({ state, onPickStage, toggleBook }) {
         <div className="grid">
           {books.map((book) => {
             const owned = state.bookList.includes(book.title);
+            const read = (state.readList ?? []).includes(book.title);
             return (
-              <button
-                key={book.title}
-                className={`book-row ${owned ? 'owned' : ''}`}
-                onClick={() => { sfx.tap(); toggleBook(book.title); }}
-              >
-                <span className="check" aria-hidden="true">{owned ? '✓' : ''}</span>
-                <span style={{ flex: 1, minWidth: 0 }}>
+              <div key={book.title} className={`book-row ${owned ? 'owned' : ''}`}>
+                <button
+                  type="button"
+                  style={{ flex: 1, minWidth: 0, textAlign: 'left' }}
+                  onClick={() => {
+                    sfx.tap();
+                    setOpenTitle(book.title);
+                  }}
+                  aria-label={`Read ${book.title}`}
+                >
                   <span className="book-title" style={{ display: 'block' }}>
-                    {book.title}
+                    📖 {book.title}
                     {book.reference && <span className="flag">📗 non-fiction</span>}
+                    {read && <span className="flag">✅ read</span>}
                   </span>
                   <span className="book-note" style={{ display: 'block' }}>{book.note}</span>
-                </span>
-              </button>
+                </button>
+                <button
+                  type="button"
+                  className="check"
+                  style={owned ? { background: '#34c759', borderColor: '#24a148', color: '#fff' } : undefined}
+                  onClick={() => {
+                    sfx.tap();
+                    toggleBook(book.title);
+                  }}
+                  aria-label={owned ? `Unmark ${book.title} as owned` : `Mark ${book.title} as owned`}
+                >
+                  {owned ? '✓' : ''}
+                </button>
+              </div>
             );
           })}
         </div>

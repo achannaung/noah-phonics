@@ -14,6 +14,7 @@ const defaultState = {
   mistakes: {},
   gamesPlayed: 0,
   bookList: [],
+  readList: [],
 };
 
 function todayKey() {
@@ -94,6 +95,14 @@ export function useProgress() {
     }));
   }, []);
 
+  const markRead = useCallback((title) => {
+    bumpStreak();
+    setState((prev) => ({
+      ...prev,
+      readList: prev.readList.includes(title) ? prev.readList : [...prev.readList, title],
+    }));
+  }, [bumpStreak]);
+
   const reset = useCallback(() => {
     setState({ ...defaultState });
     try {
@@ -112,6 +121,7 @@ export function useProgress() {
     addStars,
     setStage,
     toggleBook,
+    markRead,
     reset,
     stageInfo: getStage(state.stage),
     totalUnits: allUnits().length,

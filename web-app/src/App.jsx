@@ -61,6 +61,8 @@ export default function App() {
               open('learn');
             }}
             toggleBook={progress.toggleBook}
+            markRead={progress.markRead}
+            addStars={progress.addStars}
           />
         );
       case 'parent':

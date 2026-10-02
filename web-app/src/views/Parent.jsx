@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { SOUNDS, STAGES } from '../data/curriculum.js';
-import { speak } from '../lib/speech.js';
+import { speakSound } from '../lib/speech.js';
 
 const PIN = '1234';
 
@@ -156,7 +156,7 @@ export default function Parent({ progress, recordUnit }) {
                   <span className="book-title" style={{ display: 'block' }}>{SOUNDS[sound]?.tip}</span>
                   <span className="book-note">{count} mistakes — say it slowly, then blend.</span>
                 </span>
-                <button className="btn" onClick={() => speak(SOUNDS[sound]?.say ?? sound)}>🔊</button>
+                <button className="btn" onClick={() => speakSound(sound)}>🔊</button>
               </div>
             ))}
           </div>

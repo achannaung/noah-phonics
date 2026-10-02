@@ -45,10 +45,23 @@ export function speak(text, { rate = 0.75, pitch = 1.15, lang = 'en-US' } = {}) 
   }
 }
 
-// Slow, stretched sound for teaching a phoneme: "sh sh sh"
+import { demoSound, playSound } from './phonics.js';
+
+// Slow, stretched PURE sound for teaching a phoneme: "ssssss", not "ess".
+// Uses the WebAudio synthesizer (never spells letters). Falls back to the
+// speech voice only when Web Audio is unavailable.
 export function speakSound(sound) {
+  if (playSound(sound)) return true;
   const stretched = sound.length === 1 ? sound.repeat(6) : sound.split('').join(' ');
   speak(`${sound}. ${stretched}`, { rate: 0.5 });
+  return speechSupported;
+}
+
+// Slow teaching demo: parts first, then the whole sound ("s" ... "h" ... "sh").
+export function demoPhonic(sound) {
+  if (demoSound(sound)) return true;
+  speakSound(sound);
+  return speechSupported;
 }
 
 export function stopSpeaking() {

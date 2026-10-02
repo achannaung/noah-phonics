@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { SOUNDS } from '../data/curriculum.js';
-import { speak, speakSound } from '../lib/speech.js';
+import { speak, speakSound, demoPhonic } from '../lib/speech.js';
 import { sfx } from '../lib/sfx.js';
 import { Toast, useToast } from '../components/Toast.jsx';
 import { HighlightWord, SentenceTapper, TracingPad } from '../components/PhonicsKit.jsx';
@@ -18,7 +18,7 @@ export default function Learn({ stage, onDone, onNext, onBack }) {
 
   function completeLesson() {
     sfx.star();
-    speak(`Great job Noah! You learned the ${sound} sound.`);
+    speak(`Great job Noah! You learned a new sound.`);
     showToast(`⭐ +1 star for the “${sound}” sound!`);
     onDone({ stage: stage.id, sound });
   }
@@ -45,19 +45,19 @@ export default function Learn({ stage, onDone, onNext, onBack }) {
             className="btn"
             onClick={() => {
               sfx.tap();
-              speakSound(sound);
+              demoPhonic(sound);
             }}
           >
-            🔊 Slow sound
+            🐢 Slow sound
           </button>
           <button
             className="btn"
             onClick={() => {
               sfx.tap();
-              speak(sound);
+              speakSound(sound);
             }}
           >
-            💬 Normal
+            ⚡ Quick sound
           </button>
         </div>
       </section>

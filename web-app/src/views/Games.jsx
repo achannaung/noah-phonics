@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { SOUNDS, STAGES } from '../data/curriculum.js';
-import { speak } from '../lib/speech.js';
+import { speakSound } from '../lib/speech.js';
 import { sfx } from '../lib/sfx.js';
 import { buildQuestionBank } from '../lib/questions.js';
 import { Toast, useToast } from '../components/Toast.jsx';
@@ -24,17 +24,21 @@ function oddOneOut(sounds) {
   const same = pool.filter((p) => p.sound === anchor.sound && p.word !== anchor.word);
   const others = pool.filter((p) => p.sound !== anchor.sound);
   if (!same.length) return soundHunt(sounds);
-  const options = [
-    anchor,
-    same[Math.floor(Math.random() * same.length)],
-    ...Array.from({ length: 3 }, () => others[Math.floor(Math.random() * others.length)]),
-  ];
+  const odd = others[Math.floor(Math.random() * others.length)];
+  // Unique words only: no duplicate buttons, exactly one odd word.
+  const seen = new Set();
+  const options = [];
+  for (const o of shuffle([anchor, same[Math.floor(Math.random() * same.length)], odd])) {
+    if (seen.has(o.word)) continue;
+    seen.add(o.word);
+    options.push(o);
+  }
   return {
     kind: 'odd-one-out',
     prompt: `Which one does NOT use the “${anchor.sound}” sound?`,
     targetSound: anchor.sound,
     options: shuffle(options),
-    answer: options.find((o) => o.sound !== anchor.sound)?.word,
+    answer: odd.word,
     unitSound: anchor.sound,
   };
 }
@@ -45,14 +49,14 @@ function missingLetter(sounds) {
   const letters = target.word.toLowerCase().replace(/[^a-z]/g, '');
   const pos = Math.floor(Math.random() * letters.length);
   const shown = letters.split('').map((l, i) => (i === pos ? '_' : l)).join('');
-  const options = shuffle([
+  const options = shuffle([...new Set([
     letters[pos],
     ...shuffle(
       [...new Set(pool.map((p) => p.word.replace(/[^a-z]/g, '').charAt(pos)))].filter(
         (l) => l && l !== letters[pos],
       ),
     ).slice(0, 3),
-  ]);
+  ])]);
   return {
     kind: 'missing-letter',
     prompt: 'Which letter is missing?',
@@ -115,7 +119,7 @@ function PlayGame({ game, sounds, onExit, recordUnit, addStars }) {
     } else {
       setLives((l) => l - 1);
       showToast('Not quite. Listen again…');
-      speak(question.unitSound);
+      speakSound(question.unitSound);
     }
   }
 
@@ -179,7 +183,9 @@ function PlayGame({ game, sounds, onExit, recordUnit, addStars }) {
         {question.kind === 'sound-hunt' && (
           <>
             <div className="prompt-sound">{question.prompt.match(/“(.+)”/)[1]}</div>
-            <p style={{ fontWeight: 800, marginTop: 6 }}>Which word starts with it?</p>
+            <p style={{ fontWeight: 800, marginTop: 6 }}>
+              {question.promptKind === 'uses' ? 'Which word uses this sound?' : 'Which word starts with it?'}
+            </p>
             <div className="answer-grid" style={{ marginTop: 16 }}>
               {question.options.map((opt) => (
                 <button

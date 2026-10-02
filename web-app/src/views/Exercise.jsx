@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { speak } from '../lib/speech.js';
+import { speak, speakSound } from '../lib/speech.js';
 import { sfx } from '../lib/sfx.js';
 import { buildQuestionBank } from '../lib/questions.js';
 import { Toast, useToast } from '../components/Toast.jsx';
@@ -120,9 +120,11 @@ export default function Exercise({ stage, onBack, recordUnit }) {
       {mode === 'find' && (
         <section className="prompt-card">
           <div className="prompt-sound">{question.prompt.match(/“(.+)”/)[1]}</div>
-          <p style={{ fontWeight: 800, marginTop: 6 }}>Which word starts with it?</p>
+          <p style={{ fontWeight: 800, marginTop: 6 }}>
+            {question.promptKind === 'uses' ? 'Which word uses this sound?' : 'Which word starts with it?'}
+          </p>
           <div className="row" style={{ justifyContent: 'center', marginTop: 10 }}>
-            <button className="btn" onClick={() => { sfx.tap(); speak(question.prompt.match(/“(.+)”/)[1]); }}>
+            <button className="btn" onClick={() => { sfx.tap(); speakSound(question.prompt.match(/“(.+)”/)[1]); }}>
               🔊 Hear the sound
             </button>
           </div>

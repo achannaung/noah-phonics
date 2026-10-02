@@ -1,0 +1,13 @@
+{
+  "name": "Noah's Phonics Adventure",
+  "short_name": "Noah Phonics",
+  "description": "Learn and practise Oxford Reading Tree style phonics sounds with games and quizzes.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fff8ec",
+  "theme_color": "#ff8c42",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

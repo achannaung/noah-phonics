@@ -1,5 +1,5 @@
 /* Noah's Phonics Adventure — offline-first service worker */
-const CACHE = 'noah-phonics-v2';
+const CACHE = 'noah-phonics-v3';
 const ASSETS = [
   './',
   './index.html',

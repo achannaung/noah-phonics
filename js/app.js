@@ -347,7 +347,7 @@ Views.learn = function (V, sid, idx) {
     let ok = false;
     try { ok = typeof Phonics !== 'undefined' && Phonics.demo(u.sound); } catch (e) {}
     if (!ok) Voice.sound(u);
-    setTimeout(() => card.classList.remove('playing'), 2800);
+    setTimeout(() => card.classList.remove('playing'), 5200);
   };
   setTimeout(hear, 600);
 

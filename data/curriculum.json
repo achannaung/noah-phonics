@@ -1,0 +1,1789 @@
+{
+  "stages": [
+    {
+      "id": 1,
+      "name": "First Steps",
+      "theme": "Words & Phonics",
+      "mascot": "🐣",
+      "color": "#FFB703",
+      "level": "Oxford Stage 1+ · First Sentences level",
+      "teaches": "Single letter sounds s·a·t·p·i·n — blending simple words like sat, pin, mat.",
+      "books": [
+        "The Lost Teddy",
+        "Fun at the Beach",
+        "Mum's New Hat",
+        "The Missing Apple",
+        "The Sandcastle"
+      ],
+      "units": [
+        {
+          "sound": "s",
+          "say": "sss",
+          "cue": "Stretch it like a snake: sss!",
+          "words": [
+            [
+              "sun",
+              "☀️"
+            ],
+            [
+              "sock",
+              "🧦"
+            ],
+            [
+              "snake",
+              "🐍"
+            ],
+            [
+              "six",
+              "6️⃣"
+            ],
+            [
+              "bus",
+              "🚌"
+            ]
+          ],
+          "sentence": "Sam sat in the sun.",
+          "tricky": [],
+          "cheat": {
+            "say": "Keep it hissy — sss, with no extra 'uh' (not 'suh').",
+            "mistake": "Adding 'uh': saying 'suh-un' instead of 'sss-un'.",
+            "practice": [
+              "sun",
+              "sock",
+              "bus"
+            ]
+          }
+        },
+        {
+          "sound": "a",
+          "say": "ah",
+          "cue": "Open wide like the doctor says: ah!",
+          "words": [
+            [
+              "apple",
+              "🍎"
+            ],
+            [
+              "ant",
+              "🐜"
+            ],
+            [
+              "hat",
+              "🎩"
+            ],
+            [
+              "cat",
+              "🐱"
+            ],
+            [
+              "bag",
+              "👜"
+            ]
+          ],
+          "sentence": "A cat sat on a mat.",
+          "tricky": [],
+          "cheat": {
+            "say": "Short 'a' — ah as in apple.",
+            "mistake": "Saying the letter name 'ay' instead of 'ah'.",
+            "practice": [
+              "apple",
+              "ant",
+              "hat"
+            ]
+          }
+        },
+        {
+          "sound": "t",
+          "say": "t",
+          "cue": "Tiny tongue tap: t-t-t!",
+          "words": [
+            [
+              "tiger",
+              "🐯"
+            ],
+            [
+              "ten",
+              "🔟"
+            ],
+            [
+              "tent",
+              "⛺"
+            ],
+            [
+              "hat",
+              "🎩"
+            ],
+            [
+              "bat",
+              "🦇"
+            ]
+          ],
+          "sentence": "A fat cat sat.",
+          "tricky": [],
+          "cheat": {
+            "say": "Short, crisp 't' — tap the tongue behind the teeth.",
+            "mistake": "Adding 'uh': 'tuh'.",
+            "practice": [
+              "tiger",
+              "ten",
+              "tent"
+            ]
+          }
+        },
+        {
+          "sound": "p",
+          "say": "p",
+          "cue": "Pop it! p-p-p — feel the puff on your hand.",
+          "words": [
+            [
+              "pig",
+              "🐷"
+            ],
+            [
+              "pan",
+              "🍳"
+            ],
+            [
+              "pen",
+              "🖊️"
+            ],
+            [
+              "cap",
+              "🧢"
+            ],
+            [
+              "map",
+              "🗺️"
+            ]
+          ],
+          "sentence": "A pig sat on a mat.",
+          "tricky": [],
+          "cheat": {
+            "say": "Poppy 'p' — hold paper in front of the mouth, it should flutter.",
+            "mistake": "A heavy 'puh' with a big 'uh' after it.",
+            "practice": [
+              "pig",
+              "pan",
+              "pen"
+            ]
+          }
+        },
+        {
+          "sound": "i",
+          "say": "ih",
+          "cue": "Little squeak: ih-ih-ih!",
+          "words": [
+            [
+              "igloo",
+              "🧊"
+            ],
+            [
+              "insect",
+              "🐛"
+            ],
+            [
+              "fish",
+              "🐟"
+            ],
+            [
+              "pig",
+              "🐷"
+            ],
+            [
+              "pin",
+              "📌"
+            ]
+          ],
+          "sentence": "The fish is in the tin.",
+          "tricky": [
+            "The",
+            "is"
+          ],
+          "cheat": {
+            "say": "Short 'i' — ih as in igloo.",
+            "mistake": "Saying 'eye' (the letter name) instead of 'ih'.",
+            "practice": [
+              "fish",
+              "pin",
+              "pig"
+            ]
+          }
+        },
+        {
+          "sound": "n",
+          "say": "nnn",
+          "cue": "Hum it through your nose: nnn!",
+          "words": [
+            [
+              "nest",
+              "🪹"
+            ],
+            [
+              "nut",
+              "🌰"
+            ],
+            [
+              "nose",
+              "👃"
+            ],
+            [
+              "ten",
+              "🔟"
+            ],
+            [
+              "sun",
+              "☀️"
+            ]
+          ],
+          "sentence": "The hen sat in the nest.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "Hum through the nose — nnn.",
+            "mistake": "Mixing up n and m.",
+            "practice": [
+              "nest",
+              "nose",
+              "nut"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Fun & Friends",
+      "theme": "",
+      "mascot": "🐶",
+      "color": "#FB8500",
+      "level": "Oxford Stage 2 · Stories level",
+      "teaches": "More single sounds m·d·g·o·c·k — longer words and short sentences.",
+      "books": [
+        "The New House",
+        "The Mud Pie",
+        "The Water Fight",
+        "The Log Hut",
+        "A Little Surprise"
+      ],
+      "units": [
+        {
+          "sound": "m",
+          "say": "mmm",
+          "cue": "Yummy: mmm!",
+          "words": [
+            [
+              "moon",
+              "🌙"
+            ],
+            [
+              "milk",
+              "🥛"
+            ],
+            [
+              "monkey",
+              "🐵"
+            ],
+            [
+              "mat",
+              "🧺"
+            ],
+            [
+              "jam",
+              "🫙"
+            ]
+          ],
+          "sentence": "The monkey sat on the mat.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "Lips together and hum — mmm.",
+            "mistake": "Opening the lips, which turns it into 'muh'.",
+            "practice": [
+              "moon",
+              "milk",
+              "monkey"
+            ]
+          }
+        },
+        {
+          "sound": "d",
+          "say": "d",
+          "cue": "Tap it: d-d-d!",
+          "words": [
+            [
+              "dog",
+              "🐶"
+            ],
+            [
+              "duck",
+              "🦆"
+            ],
+            [
+              "drum",
+              "🥁"
+            ],
+            [
+              "bed",
+              "🛏️"
+            ],
+            [
+              "hand",
+              "✋"
+            ]
+          ],
+          "sentence": "The dog sat on the mat.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "Tongue taps behind the teeth — d.",
+            "mistake": "'Duh' with an extra vowel.",
+            "practice": [
+              "dog",
+              "duck",
+              "drum"
+            ]
+          }
+        },
+        {
+          "sound": "g",
+          "say": "g",
+          "cue": "Gulp it: g-g-g!",
+          "words": [
+            [
+              "goat",
+              "🐐"
+            ],
+            [
+              "gift",
+              "🎁"
+            ],
+            [
+              "gum",
+              "🍬"
+            ],
+            [
+              "bag",
+              "👜"
+            ],
+            [
+              "frog",
+              "🐸"
+            ]
+          ],
+          "sentence": "The frog sat on a log.",
+          "tricky": [],
+          "cheat": {
+            "say": "Hard 'g' as in goat — never 'j'.",
+            "mistake": "Soft g: 'jift' for gift.",
+            "practice": [
+              "goat",
+              "gift",
+              "frog"
+            ]
+          }
+        },
+        {
+          "sound": "o",
+          "say": "o (ŏ)",
+          "cue": "Round mouth: o!",
+          "words": [
+            [
+              "octopus",
+              "🐙"
+            ],
+            [
+              "ox",
+              "🐂"
+            ],
+            [
+              "pot",
+              "🍲"
+            ],
+            [
+              "dog",
+              "🐶"
+            ],
+            [
+              "fox",
+              "🦊"
+            ]
+          ],
+          "sentence": "The fox sat on a box.",
+          "tricky": [],
+          "cheat": {
+            "say": "Short 'o' — ŏ as in octopus.",
+            "mistake": "Long 'oh' (the letter name).",
+            "practice": [
+              "octopus",
+              "pot",
+              "fox"
+            ]
+          }
+        },
+        {
+          "sound": "c",
+          "say": "k",
+          "cue": "Click it: k-k-k!",
+          "words": [
+            [
+              "cat",
+              "🐱"
+            ],
+            [
+              "cake",
+              "🍰"
+            ],
+            [
+              "cup",
+              "☕"
+            ],
+            [
+              "cow",
+              "🐄"
+            ],
+            [
+              "cap",
+              "🧢"
+            ]
+          ],
+          "sentence": "The cat sat on the mat.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "Hard 'c' — it says 'k' as in cat.",
+            "mistake": "Soft c ('sss' sound) — that comes much later.",
+            "practice": [
+              "cat",
+              "cake",
+              "cup"
+            ]
+          }
+        },
+        {
+          "sound": "k",
+          "say": "k",
+          "cue": "Little cough: k-k-k!",
+          "words": [
+            [
+              "kite",
+              "🪁"
+            ],
+            [
+              "king",
+              "🤴"
+            ],
+            [
+              "kitten",
+              "🐱"
+            ],
+            [
+              "sock",
+              "🧦"
+            ],
+            [
+              "milk",
+              "🥛"
+            ]
+          ],
+          "sentence": "The kitten sat on the mat.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'k' — the same sound as hard c.",
+            "mistake": "Adding 'uh': 'kuh'.",
+            "practice": [
+              "kite",
+              "king",
+              "sock"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Plants & Animals",
+      "theme": "",
+      "mascot": "🦁",
+      "color": "#8AC926",
+      "level": "Oxford Stage 3 · Stories level",
+      "teaches": "Finishing the alphabet e·u·h·r·j·v·w·l·f·z — reading little stories.",
+      "books": [
+        "On the Sand",
+        "The Backpack",
+        "The Barbecue",
+        "The Sing Song",
+        "Nobody Wanted to Play"
+      ],
+      "units": [
+        {
+          "sound": "e",
+          "say": "eh",
+          "cue": "Smile wide: eh!",
+          "words": [
+            [
+              "egg",
+              "🥚"
+            ],
+            [
+              "elephant",
+              "🐘"
+            ],
+            [
+              "pen",
+              "🖊️"
+            ],
+            [
+              "bed",
+              "🛏️"
+            ],
+            [
+              "hen",
+              "🐔"
+            ]
+          ],
+          "sentence": "The hen sat on ten eggs.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "Short 'e' — eh as in egg.",
+            "mistake": "Saying the letter name 'ee'.",
+            "practice": [
+              "egg",
+              "pen",
+              "bed"
+            ]
+          }
+        },
+        {
+          "sound": "u",
+          "say": "uh",
+          "cue": "Little grunt: uh!",
+          "words": [
+            [
+              "umbrella",
+              "☂️"
+            ],
+            [
+              "bus",
+              "🚌"
+            ],
+            [
+              "cup",
+              "☕"
+            ],
+            [
+              "duck",
+              "🦆"
+            ],
+            [
+              "up",
+              "⬆️"
+            ]
+          ],
+          "sentence": "The duck sat on the bus.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "Short 'u' — uh as in umbrella.",
+            "mistake": "Saying 'you' (the letter name).",
+            "practice": [
+              "bus",
+              "cup",
+              "duck"
+            ]
+          }
+        },
+        {
+          "sound": "h",
+          "say": "h",
+          "cue": "Breathe out like fogging a mirror: hhh!",
+          "words": [
+            [
+              "hat",
+              "🎩"
+            ],
+            [
+              "horse",
+              "🐴"
+            ],
+            [
+              "house",
+              "🏠"
+            ],
+            [
+              "fish",
+              "🐟"
+            ],
+            [
+              "hand",
+              "✋"
+            ]
+          ],
+          "sentence": "The horse ran to the hut.",
+          "tricky": [
+            "The",
+            "to"
+          ],
+          "cheat": {
+            "say": "Just breathy air — hhh.",
+            "mistake": "Adding 'uh': 'huh'.",
+            "practice": [
+              "hat",
+              "horse",
+              "house"
+            ]
+          }
+        },
+        {
+          "sound": "r",
+          "say": "rrr",
+          "cue": "Growl like a puppy: rrr!",
+          "words": [
+            [
+              "rabbit",
+              "🐰"
+            ],
+            [
+              "rose",
+              "🌹"
+            ],
+            [
+              "robot",
+              "🤖"
+            ],
+            [
+              "car",
+              "🚗"
+            ],
+            [
+              "bird",
+              "🐦"
+            ]
+          ],
+          "sentence": "The rabbit ran in the sun.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "Growly rrr — don't roll it too long.",
+            "mistake": "'Ruh' with an extra vowel.",
+            "practice": [
+              "rabbit",
+              "rose",
+              "robot"
+            ]
+          }
+        },
+        {
+          "sound": "j",
+          "say": "j",
+          "cue": "Jiggle: j-j-j!",
+          "words": [
+            [
+              "jam",
+              "🫙"
+            ],
+            [
+              "jet",
+              "✈️"
+            ],
+            [
+              "jelly",
+              "🍮"
+            ],
+            [
+              "jacket",
+              "🧥"
+            ],
+            [
+              "jug",
+              "🏺"
+            ]
+          ],
+          "sentence": "Jan has jam.",
+          "tricky": [],
+          "cheat": {
+            "say": "'j' as in jam — gentle, never 'ch'.",
+            "mistake": "Saying 'ch' for j ('cham' for jam).",
+            "practice": [
+              "jam",
+              "jet",
+              "jug"
+            ]
+          }
+        },
+        {
+          "sound": "v",
+          "say": "vvv",
+          "cue": "Buzz like f with your voice on: vvv!",
+          "words": [
+            [
+              "van",
+              "🚐"
+            ],
+            [
+              "vest",
+              "🦺"
+            ],
+            [
+              "vase",
+              "🏺"
+            ],
+            [
+              "love",
+              "❤️"
+            ],
+            [
+              "five",
+              "5️⃣"
+            ]
+          ],
+          "sentence": "The van is red.",
+          "tricky": [
+            "The",
+            "is"
+          ],
+          "cheat": {
+            "say": "Teeth on lip, voice on — vvv (a buzzy f).",
+            "mistake": "Mixing up v and w.",
+            "practice": [
+              "van",
+              "vest",
+              "five"
+            ]
+          }
+        },
+        {
+          "sound": "w",
+          "say": "w",
+          "cue": "Wind blowing: www!",
+          "words": [
+            [
+              "whale",
+              "🐋"
+            ],
+            [
+              "web",
+              "🕸️"
+            ],
+            [
+              "window",
+              "🪟"
+            ],
+            [
+              "owl",
+              "🦉"
+            ],
+            [
+              "water",
+              "💧"
+            ]
+          ],
+          "sentence": "We saw a whale.",
+          "tricky": [],
+          "cheat": {
+            "say": "Round the lips — www.",
+            "mistake": "Mixing up w and v.",
+            "practice": [
+              "whale",
+              "web",
+              "water"
+            ]
+          }
+        },
+        {
+          "sound": "l",
+          "say": "lll",
+          "cue": "Lick it: lll!",
+          "words": [
+            [
+              "lion",
+              "🦁"
+            ],
+            [
+              "leaf",
+              "🍃"
+            ],
+            [
+              "lamp",
+              "💡"
+            ],
+            [
+              "bell",
+              "🔔"
+            ],
+            [
+              "ball",
+              "⚽"
+            ]
+          ],
+          "sentence": "The lion sat in the sun.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "Tongue tip up behind the teeth — lll.",
+            "mistake": "'Luh' with an extra vowel.",
+            "practice": [
+              "lion",
+              "leaf",
+              "lamp"
+            ]
+          }
+        },
+        {
+          "sound": "f",
+          "say": "fff",
+          "cue": "Blow out a candle: fff!",
+          "words": [
+            [
+              "fish",
+              "🐟"
+            ],
+            [
+              "frog",
+              "🐸"
+            ],
+            [
+              "fan",
+              "🪭"
+            ],
+            [
+              "leaf",
+              "🍃"
+            ],
+            [
+              "five",
+              "5️⃣"
+            ]
+          ],
+          "sentence": "The frog sat on a log.",
+          "tricky": [],
+          "cheat": {
+            "say": "Teeth on lip, no voice — fff.",
+            "mistake": "Mixing up f and v.",
+            "practice": [
+              "fish",
+              "frog",
+              "fan"
+            ]
+          }
+        },
+        {
+          "sound": "z",
+          "say": "zzz",
+          "cue": "Buzz like a bee: zzz!",
+          "words": [
+            [
+              "zebra",
+              "🦓"
+            ],
+            [
+              "zero",
+              "0️⃣"
+            ],
+            [
+              "zoo",
+              "🦒"
+            ],
+            [
+              "buzz",
+              "🐝"
+            ],
+            [
+              "fizz",
+              "🥤"
+            ]
+          ],
+          "sentence": "The zebra ran in the zoo.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "Buzzy zzz — like a bee.",
+            "mistake": "Saying 's' for z.",
+            "practice": [
+              "zebra",
+              "zero",
+              "buzz"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "In the Village",
+      "theme": "",
+      "mascot": "🏠",
+      "color": "#219EBC",
+      "level": "Oxford Stage 4 · Stories level",
+      "teaches": "First digraphs ch·sh·th·ng·ai·ee·oa — two letters, one sound!",
+      "books": [
+        "House for Sale",
+        "The Den",
+        "The Flying Elephant",
+        "Stink",
+        "Grandad's Tooth"
+      ],
+      "units": [
+        {
+          "sound": "ch",
+          "say": "ch",
+          "cue": "Chug like a train: ch-ch-ch!",
+          "words": [
+            [
+              "chick",
+              "🐥"
+            ],
+            [
+              "cheese",
+              "🧀"
+            ],
+            [
+              "chair",
+              "🪑"
+            ],
+            [
+              "church",
+              "⛪"
+            ],
+            [
+              "lunch",
+              "🍱"
+            ]
+          ],
+          "sentence": "The chick sat on the bench.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'ch' is one sound — like a sneezing train.",
+            "mistake": "Saying 'sh' for ch.",
+            "practice": [
+              "chick",
+              "cheese",
+              "chair"
+            ]
+          }
+        },
+        {
+          "sound": "sh",
+          "say": "sh",
+          "cue": "Finger on lips: shshsh!",
+          "words": [
+            [
+              "ship",
+              "🚢"
+            ],
+            [
+              "sheep",
+              "🐑"
+            ],
+            [
+              "fish",
+              "🐟"
+            ],
+            [
+              "shop",
+              "🏪"
+            ],
+            [
+              "brush",
+              "🖌️"
+            ]
+          ],
+          "sentence": "The sheep sat in the shop.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'sh' — one long quiet sound, shshsh.",
+            "mistake": "Reading s and h as two separate sounds.",
+            "practice": [
+              "ship",
+              "sheep",
+              "fish"
+            ]
+          }
+        },
+        {
+          "sound": "th",
+          "say": "th",
+          "cue": "Tongue peeks out: ththth!",
+          "words": [
+            [
+              "thumb",
+              "👍"
+            ],
+            [
+              "three",
+              "3️⃣"
+            ],
+            [
+              "bath",
+              "🛁"
+            ],
+            [
+              "mouth",
+              "👄"
+            ],
+            [
+              "feather",
+              "🪶"
+            ]
+          ],
+          "sentence": "I see three thumbs.",
+          "tricky": [],
+          "cheat": {
+            "say": "Tongue between the teeth — ththth.",
+            "mistake": "Saying 'f' or 'd' for th.",
+            "practice": [
+              "thumb",
+              "three",
+              "bath"
+            ]
+          }
+        },
+        {
+          "sound": "ng",
+          "say": "ng",
+          "cue": "Hum at the back of your throat: ng!",
+          "words": [
+            [
+              "ring",
+              "💍"
+            ],
+            [
+              "king",
+              "🤴"
+            ],
+            [
+              "sing",
+              "🎤"
+            ],
+            [
+              "wing",
+              "🪽"
+            ],
+            [
+              "long",
+              "📏"
+            ]
+          ],
+          "sentence": "The king can sing.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'ng' is one sound, made at the back of the throat.",
+            "mistake": "Reading n and g as two sounds ('sing-guh').",
+            "practice": [
+              "ring",
+              "king",
+              "sing"
+            ]
+          }
+        },
+        {
+          "sound": "ai",
+          "say": "ay",
+          "cue": "Slide aaa → iii: aaa-iii, ai!",
+          "words": [
+            [
+              "rain",
+              "🌧️"
+            ],
+            [
+              "train",
+              "🚂"
+            ],
+            [
+              "snail",
+              "🐌"
+            ],
+            [
+              "paint",
+              "🎨"
+            ],
+            [
+              "chain",
+              "⛓️"
+            ]
+          ],
+          "sentence": "The snail sat in the rain.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'ai' says 'ay' as in rain.",
+            "mistake": "Reading a and i separately ('ah-ih').",
+            "practice": [
+              "rain",
+              "train",
+              "snail"
+            ]
+          }
+        },
+        {
+          "sound": "ee",
+          "say": "ee",
+          "cue": "Squeak happily: eee!",
+          "words": [
+            [
+              "tree",
+              "🌳"
+            ],
+            [
+              "bee",
+              "🐝"
+            ],
+            [
+              "sheep",
+              "🐑"
+            ],
+            [
+              "feet",
+              "🦶"
+            ],
+            [
+              "sweet",
+              "🍬"
+            ]
+          ],
+          "sentence": "The bee sat in the tree.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'ee' says 'ee' as in tree — long and happy.",
+            "mistake": "Using the short 'e' sound ('eh').",
+            "practice": [
+              "tree",
+              "bee",
+              "sheep"
+            ]
+          }
+        },
+        {
+          "sound": "oa",
+          "say": "oh",
+          "cue": "Float like a boat: ooo-aaa, oa!",
+          "words": [
+            [
+              "boat",
+              "⛵"
+            ],
+            [
+              "goat",
+              "🐐"
+            ],
+            [
+              "coat",
+              "🧥"
+            ],
+            [
+              "road",
+              "🛣️"
+            ],
+            [
+              "soap",
+              "🧼"
+            ]
+          ],
+          "sentence": "The goat sat in the boat.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'oa' says 'oh' as in boat.",
+            "mistake": "Reading o and a separately.",
+            "practice": [
+              "boat",
+              "goat",
+              "coat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Look Around!",
+      "theme": "",
+      "mascot": "🔭",
+      "color": "#8338EC",
+      "level": "Oxford Stage 5 · More Stories level",
+      "teaches": "Vowel teams oo·igh·ar·or·er·oy·ow — trickier spellings, same sounds.",
+      "books": [
+        "The Village Show",
+        "The Old House",
+        "The School Trip",
+        "Village in the Snow",
+        "Gran"
+      ],
+      "units": [
+        {
+          "sound": "oo",
+          "say": "oo (as in book)",
+          "cue": "Short and round: ŏŏ!",
+          "words": [
+            [
+              "book",
+              "📖"
+            ],
+            [
+              "foot",
+              "🦶"
+            ],
+            [
+              "cook",
+              "👨‍🍳"
+            ],
+            [
+              "wool",
+              "🧶"
+            ],
+            [
+              "wood",
+              "🪵"
+            ]
+          ],
+          "sentence": "The cook sat on the wood.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "Short 'oo' — as in book (not the long oo in moon!).",
+            "mistake": "Using the long 'oo' as in moon.",
+            "practice": [
+              "book",
+              "foot",
+              "cook"
+            ]
+          }
+        },
+        {
+          "sound": "igh",
+          "say": "eye",
+          "cue": "Light it up: iii → igh!",
+          "words": [
+            [
+              "light",
+              "💡"
+            ],
+            [
+              "night",
+              "🌃"
+            ],
+            [
+              "high",
+              "⬆️"
+            ],
+            [
+              "flight",
+              "✈️"
+            ],
+            [
+              "fright",
+              "😱"
+            ]
+          ],
+          "sentence": "The light is on at night.",
+          "tricky": [
+            "The",
+            "is"
+          ],
+          "cheat": {
+            "say": "'igh' says 'eye' as in light — three letters, one sound.",
+            "mistake": "Reading i, g and h separately.",
+            "practice": [
+              "light",
+              "night",
+              "high"
+            ]
+          }
+        },
+        {
+          "sound": "ar",
+          "say": "ar",
+          "cue": "Talk like a pirate: arrr!",
+          "words": [
+            [
+              "car",
+              "🚗"
+            ],
+            [
+              "star",
+              "⭐"
+            ],
+            [
+              "park",
+              "🌳"
+            ],
+            [
+              "shark",
+              "🦈"
+            ],
+            [
+              "farm",
+              "🚜"
+            ]
+          ],
+          "sentence": "The shark sat in the park.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'ar' — arrr like a pirate.",
+            "mistake": "Short 'a' then 'r' as two sounds.",
+            "practice": [
+              "car",
+              "star",
+              "shark"
+            ]
+          }
+        },
+        {
+          "sound": "or",
+          "say": "or",
+          "cue": "Neigh like a horse: or-or-or!",
+          "words": [
+            [
+              "horse",
+              "🐴"
+            ],
+            [
+              "fork",
+              "🍴"
+            ],
+            [
+              "corn",
+              "🌽"
+            ],
+            [
+              "torch",
+              "🔦"
+            ],
+            [
+              "storm",
+              "⛈️"
+            ]
+          ],
+          "sentence": "The horse ran in the storm.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'or' as in horse — one sound.",
+            "mistake": "Short 'o' then 'r' as two sounds.",
+            "practice": [
+              "horse",
+              "fork",
+              "corn"
+            ]
+          }
+        },
+        {
+          "sound": "er · ir · ur",
+          "say": "er",
+          "cue": "The nurse says: er!",
+          "words": [
+            [
+              "bird",
+              "🐦"
+            ],
+            [
+              "girl",
+              "👧"
+            ],
+            [
+              "nurse",
+              "👩‍⚕️"
+            ],
+            [
+              "turtle",
+              "🐢"
+            ],
+            [
+              "fern",
+              "🌿"
+            ]
+          ],
+          "sentence": "The bird sat with the girl.",
+          "tricky": [
+            "The",
+            "with"
+          ],
+          "cheat": {
+            "say": "'er', 'ir' and 'ur' all say 'er' — three spellings, one sound.",
+            "mistake": "Reading the vowel and r separately.",
+            "practice": [
+              "bird",
+              "girl",
+              "nurse"
+            ]
+          }
+        },
+        {
+          "sound": "oy",
+          "say": "oy",
+          "cue": "Shout with joy: ooo-eee, oy!",
+          "words": [
+            [
+              "boy",
+              "👦"
+            ],
+            [
+              "toy",
+              "🧸"
+            ],
+            [
+              "joy",
+              "😊"
+            ],
+            [
+              "oyster",
+              "🦪"
+            ],
+            [
+              "cowboy",
+              "🤠"
+            ]
+          ],
+          "sentence": "The boy has a toy.",
+          "tricky": [
+            "The",
+            "has"
+          ],
+          "cheat": {
+            "say": "'oy' as in boy.",
+            "mistake": "Reading o and y separately.",
+            "practice": [
+              "boy",
+              "toy",
+              "joy"
+            ]
+          }
+        },
+        {
+          "sound": "ow",
+          "say": "ow",
+          "cue": "Stub your toe: ow!",
+          "words": [
+            [
+              "cow",
+              "🐄"
+            ],
+            [
+              "owl",
+              "🦉"
+            ],
+            [
+              "town",
+              "🏘️"
+            ],
+            [
+              "brown",
+              "🟤"
+            ],
+            [
+              "clown",
+              "🤡"
+            ]
+          ],
+          "sentence": "The cow sat in the town.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'ow' as in cow — just say 'ouch!' without the ch.",
+            "mistake": "Using the long 'o' sound.",
+            "practice": [
+              "cow",
+              "owl",
+              "town"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Our World",
+      "theme": "",
+      "mascot": "🌍",
+      "color": "#FF006E",
+      "level": "Oxford Stage 6 · Stories level",
+      "teaches": "qu·x·y·zz, speedy blends and tricky sight words — fluent little reader!",
+      "books": [
+        "The Shiny Key",
+        "Stuck in the Mud",
+        "A Sunny Day",
+        "It's Hot",
+        "Puddle Lane"
+      ],
+      "units": [
+        {
+          "sound": "qu",
+          "say": "kw",
+          "cue": "Quick: kw-kw-qu!",
+          "words": [
+            [
+              "queen",
+              "👸"
+            ],
+            [
+              "quilt",
+              "🛏️"
+            ],
+            [
+              "quack",
+              "🦆"
+            ],
+            [
+              "quiz",
+              "❓"
+            ],
+            [
+              "quick",
+              "⚡"
+            ]
+          ],
+          "sentence": "The queen sat on the quilt.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'qu' always stays together and says 'kw'.",
+            "mistake": "Saying 'q-oo' as two sounds.",
+            "practice": [
+              "queen",
+              "quack",
+              "quick"
+            ]
+          }
+        },
+        {
+          "sound": "x",
+          "say": "ks",
+          "cue": "Pack the box: k-sss, x!",
+          "words": [
+            [
+              "fox",
+              "🦊"
+            ],
+            [
+              "box",
+              "📦"
+            ],
+            [
+              "six",
+              "6️⃣"
+            ],
+            [
+              "mix",
+              "🥣"
+            ],
+            [
+              "wax",
+              "🕯️"
+            ]
+          ],
+          "sentence": "The fox sat in the box.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'x' says 'ks' as in box.",
+            "mistake": "Saying 'ex' at the start.",
+            "practice": [
+              "fox",
+              "box",
+              "six"
+            ]
+          }
+        },
+        {
+          "sound": "y",
+          "say": "y",
+          "cue": "Yo-yo: yuh-yuh-y!",
+          "words": [
+            [
+              "yo-yo",
+              "🪀"
+            ],
+            [
+              "yak",
+              "🐂"
+            ],
+            [
+              "yellow",
+              "💛"
+            ],
+            [
+              "happy",
+              "😊"
+            ],
+            [
+              "jelly",
+              "🍮"
+            ]
+          ],
+          "sentence": "The yak sat in the sun.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'y' at the start of a word says 'yuh' as in yo-yo.",
+            "mistake": "Saying the letter name 'why'.",
+            "practice": [
+              "yo-yo",
+              "yak",
+              "yellow"
+            ]
+          }
+        },
+        {
+          "sound": "zz",
+          "say": "zz",
+          "cue": "Fizzy drink: zzz!",
+          "words": [
+            [
+              "buzz",
+              "🐝"
+            ],
+            [
+              "fizz",
+              "🥤"
+            ],
+            [
+              "jazz",
+              "🎷"
+            ],
+            [
+              "fuzz",
+              "🐑"
+            ],
+            [
+              "frizz",
+              "💇"
+            ]
+          ],
+          "sentence": "The bees buzz in the sun.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "'zz' is just a buzzy z — one sound.",
+            "mistake": "Saying 'zuh-zuh' as two sounds.",
+            "practice": [
+              "buzz",
+              "fizz",
+              "jazz"
+            ]
+          }
+        },
+        {
+          "sound": "blends",
+          "say": "blend them fast!",
+          "cue": "Squish the sounds together — no 'uh' allowed!",
+          "words": [
+            [
+              "frog",
+              "🐸"
+            ],
+            [
+              "star",
+              "⭐"
+            ],
+            [
+              "crab",
+              "🦀"
+            ],
+            [
+              "drum",
+              "🥁"
+            ],
+            [
+              "plum",
+              "🫐"
+            ],
+            [
+              "nest",
+              "🪹"
+            ]
+          ],
+          "sentence": "The frog sat on the drum.",
+          "tricky": [
+            "The"
+          ],
+          "cheat": {
+            "say": "Blend fast: fff-rrr-og → frog. Keep every sound, add no vowels.",
+            "mistake": "fuh-ruh-og — sneaking 'uh' between the sounds.",
+            "practice": [
+              "frog",
+              "star",
+              "crab"
+            ]
+          }
+        },
+        {
+          "sound": "tricky words",
+          "say": "learn by heart",
+          "cue": "Tricky words can't be sounded out — learn them by heart!",
+          "words": [
+            [
+              "the",
+              "⭐"
+            ],
+            [
+              "to",
+              "⭐"
+            ],
+            [
+              "go",
+              "⭐"
+            ],
+            [
+              "no",
+              "⭐"
+            ],
+            [
+              "I",
+              "⭐"
+            ],
+            [
+              "was",
+              "⭐"
+            ]
+          ],
+          "sentence": "I said go to the shop.",
+          "tricky": [
+            "I",
+            "said",
+            "to",
+            "the"
+          ],
+          "cheat": {
+            "say": "These words break the rules — memorize them whole.",
+            "mistake": "Trying to sound them out letter by letter.",
+            "practice": [
+              "the",
+              "to",
+              "go"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -118,6 +118,7 @@ const App = {
     const [name, a, b, c] = parts;
     window.scrollTo(0, 0);
     this.setTab(h);
+    this.updatePills();
     const V = this.view;
     ({ '': () => Views.home(V),
        'stages': () => Views.stages(V),

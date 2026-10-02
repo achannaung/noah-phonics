@@ -342,9 +342,11 @@ Views.learn = function (V, sid, idx) {
   $('#hearSound', V).onclick = hear;
   $('#watchBlend', V).onclick = () => {
     card.classList.add('playing');
-    Voice.speak(`${u.sound.split('').join('... ')} ... ${u.say}`, { rate: 0.6 })
-      .then(() => Voice.sound(u))
-      .then(() => card.classList.remove('playing'));
+    Sfx.pop();
+    let ok = false;
+    try { ok = typeof Phonics !== 'undefined' && Phonics.demo(u.sound); } catch (e) {}
+    if (!ok) Voice.sound(u);
+    setTimeout(() => card.classList.remove('playing'), 2800);
   };
   setTimeout(hear, 600);
 

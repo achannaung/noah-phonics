@@ -41,7 +41,14 @@ const Voice = (() => {
 
   return {
     speak,
-    sound: (unit) => speak(unit.say, { rate: 0.7, pitch: 1.1 }),
+    sound: (unit) => {
+      // Pure phonics sounds come from the WebAudio synthesizer (no letter names!).
+      // Only "tricky words" has no synth recipe — spoken as words via TTS.
+      try {
+        if (typeof Phonics !== 'undefined' && Phonics.play(unit.sound)) return Promise.resolve();
+      } catch (e) {}
+      return speak(unit.sound === 'tricky words' ? 'tricky words' : unit.say, { rate: 0.7, pitch: 1.1 });
+    },
     word: (w) => speak(w, { rate: 0.8 }),
     sentence: (s) => speak(s, { rate: 0.88 }),
     cue: (t) => speak(t, { rate: 0.9 }),

@@ -1,11 +1,12 @@
 /* Noah's Phonics Adventure — offline-first service worker */
-const CACHE = 'noah-phonics-v1';
+const CACHE = 'noah-phonics-v2';
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
   './css/styles.css',
   './js/data.js',
+  './js/phonics.js',
   './js/speech.js',
   './js/games.js',
   './js/app.js',
